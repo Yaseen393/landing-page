@@ -33,7 +33,63 @@
   <button id="next-btn">Next scene</button>
 
   <script>
-    
+
+    const backgrounds = [
+  "assets/blade-runner-2049.mp4",
+  "assets/fight-club.mp4",
+  "assets/cyberpunk-edgerunners.mp4",
+  "assets/dark-knight.mp4",
+  "assets/sinners.mp4",
+  "assets/Entergalactic.mp4"
+    ];
+
+    const titles = [
+  "Blade Runner 2049",
+  "Fight Club",
+  "Cyberpunk: Edgerunners",
+  "The Dark Knight",
+  "Sinners",
+  "Entergalactic"
+    ];
+
+    const quotes = [
+  "Even something made can long to be real.",
+  "Lose everything, and find out who's left.",
+  "Reach for the moon, even if the city won't let you go.",
+  "Some heroes are only seen in the dark.",
+  "The music calls the night, and the night calls back.",
+  "Love in the city feels like floating through space."
+    ];
+
+    const details = [
+  "Denis Villeneuve · 2017",
+  "David Fincher · 1999",
+  "Hiroyuki Imaishi · 2022",
+  "Christopher Nolan · 2008",
+  "Ryan Coogler · 2025",
+  "Fletcher Moules · 2022"
+    ];
+
+
+
+const bgVideo = document.getElementById("bg-video");
+const titleText = document.getElementById("title");
+const quoteText = document.getElementById("quote");
+const detailsText = document.getElementById("details");
+
+function getRandomIndex() {
+  return Math.floor(Math.random() * backgrounds.length);
+}
+
+function showScene(index) {
+  bgVideo.src = backgrounds[index];
+  titleText.textContent = titles[index];
+  quoteText.textContent = "“" + quotes[index] + "”";
+  detailsText.textContent = details[index];
+}
+
+showScene(getRandomIndex());
+
   </script>
 
 
