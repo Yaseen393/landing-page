@@ -107,3 +107,33 @@ body{
 #title {animation-delay: 1s;}
 #quote {animation-delay: 1.8s;}
 #details {animation-delay: 2.4s;}
+
+
+.letterbox {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background: #000;
+    z-index: 2;
+}
+
+
+.letterbox.top {
+    top: 0;
+    animation: slidedown 1s ease-out both;
+}
+
+.letterbox.bottom {
+    bottom: 0;
+    animation: slideup 1s ease-out both;
+}
+
+@keyframes slidedown {
+    from { transform: translateY(-100%); }
+}
+
+@keyframes slideup {
+    from { transform: translateY(100%); }
+}
+
