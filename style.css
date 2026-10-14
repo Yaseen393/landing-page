@@ -137,3 +137,21 @@ body{
     from { transform: translateY(100%); }
 }
 
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+#title {
+  font-family: "Michroma", sans-serif;
+  font-size: 64px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+#quote {
+  font-size: 30px;
+}
