@@ -91,6 +91,19 @@ body{
     from { opacity: 0; }
 }
 
-@keyframes fadeOut {
+@keyframes fadeup {
     from { opacity: 0; transform:translateY(20px) }
 }
+
+.background video{
+    animation: fadeIn 2s ease-out both;
+}
+
+.label, #title, #quote, #details{
+    animation: fadeup 2s ease-out both;
+}
+
+.label {animation-delay: 0.5s;}
+#title {animation-delay: 1s;}
+#quote {animation-delay: 1.8s;}
+#details {animation-delay: 2.4s;}
