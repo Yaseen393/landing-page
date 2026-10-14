@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Now Showing</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital@1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
+    <div class="background">
+        <video id="bg-video" autoplay muted loop playsinline></video>
+    </div>
+
+
+    <div class="overlay"></div>
+
+    <div class="letterbox top"></div>
+  <div class="letterbox bottom"></div>
+
+  <main class="content">
+    <p class="label">Now showing</p>
+    <h1 id="title"></h1>
+    <p id="quote"></p>
+    <p id="details"></p>
+  </main>
+
+  <button id="next-btn">Next scene</button>
+
+  <script>
+    
+  </script>
+
+
     
 </body>
 </html>
